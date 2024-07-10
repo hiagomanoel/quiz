@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Teste seus conhecimentos!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="/imgs/foto.png" alt="foto_cabecario">
+        <h1>Quiz - Teste seus conhecimentos!</h1>
+    </header>
+
+    <main>
+        <div class="quiz-container">
+            <div class="question">
+                <label for="q1">Pergunta 1: O que é HTML?</label>
+                <select id="q1">
+                    <option value="">Selecione uma opção</option>
+                    <option value="a">Uma linguagem de marcação</option>
+                    <option value="b">Um sistema operacional</option>
+                    <option value="c">Um tipo de café</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q2">Pergunta 2: Qual o símbolo do elemento select em HTML?</label>
+                <select id="q2">
+                    <option value="">Selecione uma opção</option>
+                    <option value="a">&lt;select&gt;</option>
+                    <option value="b">&lt;input&gt;</option>
+                    <option value="c">&lt;option&gt;</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q3">Pergunta 3: Quem desenvolveu JavaScript?</label>
+                <select id="q3">
+                    <option value="">Selecione uma opção</option>
+                    <option value="a">Microsoft</option>
+                    <option value="b">Mozilla</option>
+                    <option value="c">Netscape</option>
+                </select>
+            </div>
+
+            <button onclick="calcularPontuacao()">Calcular Pontuação</button>
+            <input type="text" id="pontuacao" placeholder="Sua pontuação" readonly>
+            <span id="aviso" class="aviso"></span>
+        </div>
+    </main>
+
+    <script src="logica-quiz.js"></script>
+</body>
+</html>
